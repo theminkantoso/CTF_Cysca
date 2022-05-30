@@ -5,7 +5,7 @@ Chọn <code>Follow Stream</code><br/>
 Chọn checkbox <strong>Raw</strong>, chọn dropdown thay đổi từ "Entire conversation" thành <strong>10.0.0.103:50723 -> 10.0.0.104:37376 (3230287)</strong> và chọn <strong>Save As</strong><br/>
 <code>File->Export Objects -> HTTP</code> và chọn tạo 1 folder <strong>export</strong> trên desktop<br/>
 Lưu tên file là <code>diskimage.gz</code><br/>
-Chạy theo thứ tự các lệnh sau
+Chạy theo thứ tự các lệnh sau<br/>
 <code>gzip -d diskimage.gz</code><br/>
 <code>file diskimage</code><br/>
 <code>icat -o 128 diskimage 589 > secret.7z</code><br/>
