@@ -11,4 +11,5 @@ Chạy theo thứ tự các lệnh sau<br/>
 <code>icat -o 128 diskimage 589 > secret.7z</code><br/>
 <code>7z x -p'nRkmrtp2("u8~/ph' secret.7z</code><br/>
 <code>cat secret.txt</code><br/>
-Mở txt trên desktop sẽ thấy được cờ là <code>WhiteBelatedBlind439</code>
+Mở txt trên desktop sẽ thấy được cờ là <code>WhiteBelatedBlind439</code><br/>
+<strong> Lưu ý dấu '-' copy vào Kali hay bị lỗi, phải thay lại bằng tay</strong>

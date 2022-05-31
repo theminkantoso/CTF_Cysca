@@ -3,4 +3,5 @@ Tải file <code>test.bmp</code> từ google ở máy thực rồi kéo thả v�
 Chạy lệnh sau: <br/>
 <code>python script.py</code><br/>
 Mở file <strong>1612-409.bmp</strong> trong Desktop của Kali để thấy Flag <br/>
-Flag: <strong>BoxingDesktopGutter798</strong>
+Flag: <strong>BoxingDesktopGutter798</strong><br/>
+<strong>Lưu ý dấu '-' khi copy vào Kali hay bị lỗi, phải thay lại bằng tay</strong>
