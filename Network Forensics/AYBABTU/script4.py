@@ -15,7 +15,7 @@ def decode(data, frags, dir):
 	if dlen > 0 and len(data) >= dlen:
 		data = decompress(data[:dlen])
 		if cmd in [0x02, 0x04]:
-			filename = "%s­%s.dat" % (dir, md5(data).hexdigest())
+			filename = "%s-%s.dat" % (dir, md5(data).hexdigest())
 			print "%s pid=%s dlen=%s cmd=%s" % (dir, pid, dlen, cmd)
 			print "Writing out file to %s..." % filename
 			f = open(filename, 'wb')
@@ -23,12 +23,12 @@ def decode(data, frags, dir):
 			f.close()
 		else:
 			print "%s pid=%s dlen=%s cmd=%s data=%s" % (dir, pid, dlen, cmd, repr(data))
-pkts = rdpcap('74db9d6b62579fea4525d40e6848433f­net03.pcap')
+pkts = rdpcap('74db9d6b62579fea4525d40e6848433f-net03.pcap')
 frags = {'C2S': {}, 'S2C': {}}
 for pkt in pkts:
 	if DNSRR in pkt:
 		data = pkt[DNS].qd.qname
-		data = data.split('­')[0].replace('.','')
+		data = data.split('-')[0].replace('.','')
 		data = b32decode(data, True) # decodes lowercase
 		decode(data, frags, 'C2S')
 		data = pkt[DNSRR].rdata

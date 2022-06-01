@@ -12,11 +12,11 @@ def decode(data, dir):
 		except Exception, e:
             print e
 		print "%s pid=%s dlen=%s cmd=%s data=%s" % (dir, pid, dlen, cmd, repr(data))
-pkts = rdpcap('74db9d6b62579fea4525d40e6848433f­net03.pcap')
+pkts = rdpcap('74db9d6b62579fea4525d40e6848433f-net03.pcap')
 for pkt in pkts:
 	if DNSRR in pkt:
 		data = pkt[DNS].qd.qname
-		data = data.split('­')[0].replace('.','')
+		data = data.split('-')[0].replace('.','')
 		data = b32decode(data, True) # decodes lowercase
 		decode(data, 'C>S')
 		data = pkt[DNSRR].rdata
