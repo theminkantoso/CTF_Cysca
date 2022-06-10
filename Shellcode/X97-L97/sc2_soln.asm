@@ -1,6 +1,6 @@
 BITS 32
 start:
-	mov eax, 0xb7504fff
+	mov eax, 0xb752afff
 	mov ebx, 'CySC'
 compare:
 	inc eax
